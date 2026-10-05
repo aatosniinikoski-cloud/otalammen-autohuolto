@@ -1,0 +1,29 @@
+:root {
+  --color-background: oklch(0.145 0.008 28);
+  --color-background-soft: oklch(0.18 0.009 28);
+  --color-surface: oklch(0.205 0.01 28);
+  --color-surface-raised: oklch(0.245 0.012 28);
+  --color-surface-hover: oklch(0.272 0.014 28);
+  --color-text: oklch(0.94 0.015 78);
+  --color-text-strong: oklch(0.985 0.008 78);
+  --color-text-muted: oklch(0.7 0.015 72);
+  --color-text-faint: oklch(0.57 0.014 72);
+  --color-border: oklch(0.35 0.012 38);
+  --color-border-strong: oklch(0.46 0.018 38);
+  --color-accent: oklch(0.48 0.155 28);
+  --color-accent-hover: oklch(0.55 0.18 28);
+  --color-accent-soft: oklch(0.27 0.055 27);
+  --color-success: oklch(0.7 0.13 149);
+  --color-success-soft: oklch(0.255 0.045 149);
+  --color-error: oklch(0.72 0.16 30);
+  --color-error-soft: oklch(0.27 0.055 28);
+  --color-focus: oklch(0.74 0.12 45);
+  --color-overlay: oklch(0.08 0.005 28 / 0.8);
+  --shadow-tool: 0 24px 60px oklch(0.06 0.005 28 / 0.32);
+  --shadow-dialog: 0 28px 80px oklch(0.04 0.004 28 / 0.6);
+  --font-display: 'Manrope', system-ui, sans-serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 11px;
+  --radius-lg: 14px;
+}
