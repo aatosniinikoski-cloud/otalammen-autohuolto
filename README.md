@@ -27,4 +27,16 @@ Vastaanottavaa backendia tai GoHighLevel-yhteyttä ei ole vielä liitetty. Lähe
 
 Ympäristötiedostoja, salaisuuksia, asennettuja riippuvuuksia ja rakennustuloksia ei julkaista tässä repositoryssa. Mahdollinen paikallinen `.env.local` pysyy Gitin ulkopuolella. API:n oletusosoite on `/api/estimate-requests`; salaiset webhook-osoitteet kuuluvat backendin ympäristöön.
 
-GitHub Pages -julkaisua ei ole otettu käyttöön.
+## GitHub Pages
+
+Julkaisuosoite: https://aatosniinikoski-cloud.github.io/otalammen-autohuolto/
+
+Viten `base` on `/otalammen-autohuolto/`. Repositoryn Pages-lähteenä käytetään GitHub Actionsia. `.github/workflows/deploy.yml` rakentaa sovelluksen komennolla `npm run build` ja julkaisee vain `dist`-kansion aina, kun `main` päivittyy. Lähdekoodin `index.html`-tiedostoa ei julkaista suoraan.
+
+Paikallisen tuotantoversion esikatselu buildin jälkeen:
+
+```sh
+npx vite preview --host 127.0.0.1 --port 4173
+```
+
+Esikatselu on osoitteessa `http://127.0.0.1:4173/otalammen-autohuolto/`. Pages on staattinen sivusto; huoltopyyntöjen toimitus tarvitsee edelleen integraatio-ohjeessa kuvatun erillisen vastaanottopalvelun.
